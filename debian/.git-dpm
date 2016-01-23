@@ -1,0 +1,11 @@
+# see git-dpm(1) from git-dpm package
+a6b0242c7ff83c513de94d81fc3831c03cf10beb
+a6b0242c7ff83c513de94d81fc3831c03cf10beb
+a6b0242c7ff83c513de94d81fc3831c03cf10beb
+a6b0242c7ff83c513de94d81fc3831c03cf10beb
+enum34_1.1.2.orig.tar.gz
+98f4db4b3455533c4433e8294764eef8d90a2219
+46757
+debianTag="debian/%e%v"
+patchedTag="patched/%e%v"
+upstreamTag="upstream/%e%u"
