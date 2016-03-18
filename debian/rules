@@ -3,7 +3,7 @@
 export PYBUILD_NAME=enum34
 
 %:
-	dh $@ --with python2,pypy --buildsystem=pybuild
+	dh $@ --with python2 --buildsystem=pybuild
 
 override_dh_installdocs:
 	mkdir -p debian/tmp
