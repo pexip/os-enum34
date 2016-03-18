@@ -1,6 +1,7 @@
 Source: enum34
-Maintainer: Barry Warsaw <barry@debian.org>
-Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Barry Warsaw <barry@debian.org>
+XSBC-Pexip-Original-Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Homepage: https://pypi.python.org/pypi/enum34
 Section: python
 X-Python-Version: >= 2.6
@@ -16,6 +17,7 @@ Build-Depends: debhelper (>= 9),
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/python-modules/packages/enum34.git
 Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/enum34.git
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
 
 Package: python-enum34-doc
 Architecture: all
