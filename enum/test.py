@@ -1,10 +1,20 @@
-import enum
+from pickle import dumps, loads, PicklingError, HIGHEST_PROTOCOL
 import sys
 import unittest
-from enum import Enum, IntEnum, unique, EnumMeta
-from pickle import dumps, loads, PicklingError, HIGHEST_PROTOCOL
-
 pyver = float('%s.%s' % sys.version_info[:2])
+if pyver < 2.5:
+    sys.path.insert(0, '.')
+import enum
+from enum import Enum, IntEnum, unique, EnumMeta
+
+if pyver < 2.6:
+    from __builtin__ import enumerate as bltin_enumerate
+    def enumerate(thing, start=0):
+        result = []
+        for i, item in bltin_enumerate(thing):
+            i = i + start
+            result.append((i, item))
+        return result
 
 try:
     any
@@ -325,6 +335,19 @@ class TestEnum(unittest.TestCase):
         self.assertRaises(AttributeError, delattr, Season, 'DRY')
         self.assertRaises(AttributeError, delattr, Season.SPRING, 'name')
 
+    def test_bool_of_class(self):
+        class Empty(Enum):
+            pass
+        self.assertTrue(bool(Empty))
+
+    def test_bool_of_member(self):
+        class Count(Enum):
+            zero = 0
+            one = 1
+            two = 2
+        for member in Count:
+            self.assertTrue(bool(member))
+
     def test_invalid_names(self):
         def create_bad_class_1():
             class Wrong(Enum):
@@ -334,14 +357,6 @@ class TestEnum(unittest.TestCase):
                 _reserved_ = 3
         self.assertRaises(ValueError, create_bad_class_1)
         self.assertRaises(ValueError, create_bad_class_2)
-
-    # TODO: enable when Python 3.6 is released
-    # def test_bool(self):
-    #     class Logic(Enum):
-    #         true = True
-    #         false = False
-    #     self.assertTrue(Logic.true)
-    #     self.assertFalse(Logic.false)
 
     def test_contains(self):
         Season = self.Season
@@ -437,7 +452,7 @@ class TestEnum(unittest.TestCase):
         self.assertEqual(dates[Season.AUTUMN], '1031')
 
     def test_enum_duplicates(self):
-        __order__ = "SPRING SUMMER AUTUMN WINTER"
+        _order_ = "SPRING SUMMER AUTUMN WINTER"
         class Season(Enum):
             SPRING = 1
             SUMMER = 2
@@ -679,7 +694,7 @@ class TestEnum(unittest.TestCase):
 
     def test_iteration_order(self):
         class Season(Enum):
-            __order__ = 'SUMMER WINTER AUTUMN SPRING'
+            _order_ = 'SUMMER WINTER AUTUMN SPRING'
             SUMMER = 2
             WINTER = 4
             AUTUMN = 3
@@ -1579,7 +1594,7 @@ class TestEnum(unittest.TestCase):
             def __int__(self):
                 return int(self._value_)
         class Color(AutoNumber2):
-            __order__ = 'red green blue'
+            _order_ = 'red green blue'
             red = ()
             green = ()
             blue = ()
@@ -1724,7 +1739,7 @@ class TestEnum(unittest.TestCase):
                 obj._value_ = value
                 return obj
         class ColorInAList(AutoNumberInAList):
-            __order__ = 'red green blue'
+            _order_ = 'red green blue'
             red = ()
             green = ()
             blue = ()
@@ -1784,7 +1799,7 @@ class TestUnique(unittest.TestCase):
 
         try:
             class Dirtier(IntEnum):
-                __order__ = 'single double triple turkey'
+                _order_ = 'single double triple turkey'
                 single = 1
                 double = 1
                 triple = 3

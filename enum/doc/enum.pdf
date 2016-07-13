@@ -90,7 +90,7 @@ endobj
   /Type /Page >>
 endobj
 27 0 obj
-<< /Border [ 0 0 0 ] /Contents () /Dest [ 26 0 R /XYZ 62.69291 610.8236 0 ] /Rect [ 309.4094 311.5736 340.6461 323.5736 ] /Subtype /Link /Type /Annot >>
+<< /Border [ 0 0 0 ] /Contents () /Dest [ 26 0 R /XYZ 62.69291 610.8236 0 ] /Rect [ 309.4094 299.5736 340.6461 311.5736 ] /Subtype /Link /Type /Annot >>
 endobj
 28 0 obj
 << /Annots [ 27 0 R ] /Contents 67 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 55 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
@@ -100,7 +100,7 @@ endobj
 << /Outlines 31 0 R /PageLabels 68 0 R /PageMode /UseNone /Pages 55 0 R /Type /Catalog >>
 endobj
 30 0 obj
-<< /Author () /CreationDate (D:20151129012746+08'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+<< /Author () /CreationDate (D:20160515202831+08'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
   /Title (enum --- support for enumerations) >>
 endobj
 31 0 obj
@@ -1975,7 +1975,7 @@ Q
 endstream
 endobj
 67 0 obj
-<< /Length 5416 >>
+<< /Length 5453 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
@@ -2031,13 +2031,13 @@ BT 1 0 0 1 0 3 Tm 18 TL /F3 15 Tf 0 0 0 rg (Finer Points) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 532.0236 cm
+1 0 0 1 62.69291 520.0236 cm
 q
-BT 1 0 0 1 0 26 Tm 5.488555 Tw 12 TL /F4 10 Tf 0 0 0 rg (Enum ) Tj /F1 10 Tf 0 0 0 rg (members are instances of an ) Tj /F4 10 Tf 0 0 0 rg (Enum ) Tj /F1 10 Tf 0 0 0 rg (class, and even though they are accessible as) Tj T* 0 Tw 1.129318 Tw /F5 10 Tf 0 0 0 rg (EnumClass.member) Tj /F1 10 Tf 0 0 0 rg (, they should not be accessed directly from the member as that lookup may fail or,) Tj T* 0 Tw (worse, return something besides the ) Tj /F4 10 Tf 0 0 0 rg (Enum ) Tj /F1 10 Tf 0 0 0 rg (member you were looking for \(changed in version 1.1.1\):) Tj T* ET
+BT 1 0 0 1 0 38 Tm 5.488555 Tw 12 TL /F4 10 Tf 0 0 0 rg (Enum ) Tj /F1 10 Tf 0 0 0 rg (members are instances of an ) Tj /F4 10 Tf 0 0 0 rg (Enum ) Tj /F1 10 Tf 0 0 0 rg (class, and even though they are accessible as) Tj T* 0 Tw 1.504147 Tw /F5 10 Tf 0 0 0 rg (EnumClass.member1.member2) Tj /F1 10 Tf 0 0 0 rg (, they should not be accessed directly from the member as that lookup) Tj T* 0 Tw .329985 Tw (may fail or, worse, return something besides the ) Tj /F4 10 Tf 0 0 0 rg (Enum ) Tj /F1 10 Tf 0 0 0 rg (member you were looking for \(changed in version) Tj T* 0 Tw (1.1.1\):) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 402.8236 cm
+1 0 0 1 62.69291 390.8236 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -2050,32 +2050,32 @@ q
 n -6 -6 468.6898 120 re B*
 Q
 q
-BT 1 0 0 1 0 98 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( class FieldTypes\(Enum\):) Tj T* (...     name = 0) Tj T* (...     value = 1) Tj T* (...     size = 2) Tj T* (...) Tj T* (>) Tj (>) Tj (>) Tj ( FieldTypes.value.size) Tj T* (<) Tj (FieldTypes.size: 2) Tj (>) Tj  T* (>) Tj (>) Tj (>) Tj ( FieldTypes.size.value) Tj T* (2) Tj T* ET
+BT 1 0 0 1 0 98 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( class FieldTypes\(Enum\):) Tj T* (...     name = 1) Tj T* (...     value = 2) Tj T* (...     size = 3) Tj T* (...) Tj T* (>) Tj (>) Tj (>) Tj ( FieldTypes.value.size) Tj T* (<) Tj (FieldTypes.size: 3) Tj (>) Tj  T* (>) Tj (>) Tj (>) Tj ( FieldTypes.size.value) Tj T* (3) Tj T* ET
 Q
 Q
 Q
 Q
 Q
 q
-1 0 0 1 62.69291 382.8236 cm
+1 0 0 1 62.69291 370.8236 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Likewise, ) Tj /F4 10 Tf 0 0 0 rg (__members__ ) Tj /F1 10 Tf 0 0 0 rg (is only available on the class.) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (The ) Tj /F4 10 Tf 0 0 0 rg (__members__ ) Tj /F1 10 Tf 0 0 0 rg (attribute is only available on the class.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 328.8236 cm
+1 0 0 1 62.69291 316.8236 cm
 q
 BT 1 0 0 1 0 38 Tm 1.374651 Tw 12 TL /F1 10 Tf 0 0 0 rg (In Python 3.x ) Tj /F4 10 Tf 0 0 0 rg (__members__ ) Tj /F1 10 Tf 0 0 0 rg (is always an ) Tj /F4 10 Tf 0 0 0 rg (OrderedDict) Tj /F1 10 Tf 0 0 0 rg (, with the order being the definition order. In) Tj T* 0 Tw 3.009213 Tw (Python 2.7 ) Tj /F4 10 Tf 0 0 0 rg (__members__ ) Tj /F1 10 Tf 0 0 0 rg (is an ) Tj /F4 10 Tf 0 0 0 rg (OrderedDict ) Tj /F1 10 Tf 0 0 0 rg (if ) Tj /F4 10 Tf 0 0 0 rg (__order__ ) Tj /F1 10 Tf 0 0 0 rg (was specified, and a plain ) Tj /F4 10 Tf 0 0 0 rg (dict) Tj T* 0 Tw 1.851318 Tw /F1 10 Tf 0 0 0 rg (otherwise. In all other Python 2.x versions ) Tj /F4 10 Tf 0 0 0 rg (__members__ ) Tj /F1 10 Tf 0 0 0 rg (is a plain ) Tj /F4 10 Tf 0 0 0 rg (dict ) Tj /F1 10 Tf 0 0 0 rg (even if ) Tj /F4 10 Tf 0 0 0 rg (__order__ ) Tj /F1 10 Tf 0 0 0 rg (was) Tj T* 0 Tw (specified as the ) Tj /F4 10 Tf 0 0 0 rg (OrderedDict ) Tj /F1 10 Tf 0 0 0 rg (type didn't exist yet.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 298.8236 cm
+1 0 0 1 62.69291 286.8236 cm
 q
 BT 1 0 0 1 0 14 Tm .106654 Tw 12 TL /F1 10 Tf 0 0 0 rg (If you give your ) Tj /F4 10 Tf 0 0 0 rg (Enum ) Tj /F1 10 Tf 0 0 0 rg (subclass extra methods, like the ) Tj 0 0 .501961 rg (Planet ) Tj 0 0 0 rg (class above, those methods will show up in) Tj T* 0 Tw (a ) Tj /F5 10 Tf 0 0 0 rg (dir ) Tj /F1 10 Tf 0 0 0 rg (of the member, but not of the class:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 217.6236 cm
+1 0 0 1 62.69291 205.6236 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -2095,7 +2095,7 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 173.6236 cm
+1 0 0 1 62.69291 161.6236 cm
 q
 BT 1 0 0 1 0 26 Tm .938935 Tw 12 TL /F1 10 Tf 0 0 0 rg (A ) Tj /F4 10 Tf 0 0 0 rg (__new__ ) Tj /F1 10 Tf 0 0 0 rg (method will only be used for the creation of the ) Tj /F4 10 Tf 0 0 0 rg (Enum ) Tj /F1 10 Tf 0 0 0 rg (members -- after that it is replaced.) Tj T* 0 Tw .949461 Tw (This means if you wish to change how ) Tj /F4 10 Tf 0 0 0 rg (Enum ) Tj /F1 10 Tf 0 0 0 rg (members are looked up you either have to write a helper) Tj T* 0 Tw (function or a ) Tj /F4 10 Tf 0 0 0 rg (classmethod) Tj /F1 10 Tf 0 0 0 rg (.) Tj T* ET
 Q
@@ -2214,8 +2214,7 @@ xref
 0000053882 00000 n
 0000058097 00000 n
 0000062193 00000 n
-0000067666 00000 n
-0000067819 00000 n
+0000067703 00000 n
 0000067856 00000 n
 0000067893 00000 n
 0000067930 00000 n
@@ -2225,13 +2224,14 @@ xref
 0000068078 00000 n
 0000068115 00000 n
 0000068152 00000 n
-0000068190 00000 n
-0000068228 00000 n
+0000068189 00000 n
+0000068227 00000 n
+0000068265 00000 n
 trailer
 << /ID 
  % ReportLab generated PDF document -- digest (http://www.reportlab.com)
- [(\022[\343\363\025\0006\017{\214\256\321:\020h\367) (\022[\343\363\025\0006\017{\214\256\321:\020h\367)]
+ [(<}|~gm\352\320\235=\001p\220v\224\336) (<}|~gm\352\320\235=\001p\220v\224\336)]
  /Info 30 0 R /Root 29 0 R /Size 81 >>
 startxref
-68266
+68303
 %%EOF

@@ -1,6 +1,6 @@
 Source: enum34
-Maintainer: Barry Warsaw <barry@debian.org>
-Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Barry Warsaw <barry@debian.org>
 Homepage: https://pypi.python.org/pypi/enum34
 Section: python
 X-Python-Version: >= 2.6
@@ -13,8 +13,9 @@ Build-Depends: debhelper (>= 9),
                python-docutils,
                python-setuptools,
                python-sphinx (>= 1.0.7+dfsg-1~),
-Standards-Version: 3.9.6
-Vcs-Git: git://anonscm.debian.org/python-modules/packages/enum34.git
+Standards-Version: 3.9.8
+Testsuite: autopkgtest
+Vcs-Git: https://anonscm.debian.org/git/python-modules/packages/enum34.git
 Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/enum34.git
 
 Package: python-enum34-doc
@@ -33,6 +34,7 @@ Package: python-enum34
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}
 Suggests: python-enum34-doc
+Breaks: python-enum
 Description: backport of Python 3.4's enum package
  PEP 435 adds an enumeration to Python 3.4.  This module provides a
  backport of that data type for older Python versions.  It defines two
