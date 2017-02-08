@@ -33,8 +33,6 @@ Package: python-enum34
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}
 Suggests: python-enum34-doc
-Conflicts: python-enum
-Replaces: python-enum
 Description: backport of Python 3.4's enum package
  PEP 435 adds an enumeration to Python 3.4.  This module provides a
  backport of that data type for older Python versions.  It defines two
